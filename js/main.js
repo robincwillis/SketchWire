@@ -8,5 +8,11 @@ video.addEventListener('loadeddata', function(e) { // Repeat this for other even
 
 });
 
+var playButton = document.getElementById("play-button");
+
+playButton.addEventListener("click", function() {
+    video.play();  
+    playButton.parentNode.removeChild(playButton);
+});
 
 

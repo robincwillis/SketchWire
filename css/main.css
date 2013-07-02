@@ -2,8 +2,8 @@
 @import 'loader.css';
 
 body{
-	padding-top:60px;
-	padding-bottom:20px;
+	margin-top: 60px;
+	margin-bottom:20px;
 	color:#fff;
 	font-family: Georgia, Times, "Times New Roman", serif;
 	background-color: rgb(75,75,75);
@@ -28,24 +28,13 @@ h1{
 
 h1, h2, h3{
 	font-family:'OstrichSansRoundedMedium', Arial, sans-serif;
+	font-weight: normal;
 }
 
 #panel{
 	background-color:rgba(0,0,0,0.2);
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-}
-
-#preloader{
-	position: absolute;
-	width:128px;
-	height:128px;
-	top:50%;
-	left:50%;
-	margin-top:-64px;
-	margin-left: -64px;
-
-	z-index: 100;
 }
 
 #video_background { 
@@ -58,4 +47,83 @@ h1, h2, h3{
 	height: auto; 
 	z-index: -1000; 
 	overflow: hidden; 
+	background-color: rgb(75,75,75);
+}
+
+#preloader{
+	position: absolute;
+	width:128px;
+	height:128px;
+	top:50%;
+	left:50%;
+	margin-top:-64px;
+	margin-left: -64px;
+	z-index: 100;
+}
+
+#play{
+	display: none;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 960px) {
+/* Styles */
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+	#preloader{
+		display: none;
+	}
+	#play{
+		display:block;
+		position: absolute;
+		left:50%;
+		top:50%; 
+		margin-left: -32px;
+		z-index: 20000;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* hack to get video to fill screen instead of fit with black letterbox */
+	#video_background{
+			min-height: 120%; 
+	}
+	body{
+		margin-top: 25px;
+
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/*ok we cant get the video to scale up so lest shift the content to fit the frame*/
+	body{
+		margin-top: 185px;
+
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body{
+		margin-top: 20px;
+	}
+	
+	#preloader{
+		visibility: hidden;
+	}
+
+	#video_background{
+		position: static;
+		min-width:10px;
+		min-height:209px;
+		max-width:100%;
+		height:auto;
+	}
+
 }
