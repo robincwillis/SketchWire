@@ -20,17 +20,45 @@
 </head>
 <body>
 
+
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-       <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+<div id="preloader">
+<div id="floatingCirclesG">
+<div class="f_circleG" id="frotateG_01">
+</div>
+<div class="f_circleG" id="frotateG_02">
+</div>
+<div class="f_circleG" id="frotateG_03">
+</div>
+<div class="f_circleG" id="frotateG_04">
+</div>
+<div class="f_circleG" id="frotateG_05">
+</div>
+<div class="f_circleG" id="frotateG_06">
+</div>
+<div class="f_circleG" id="frotateG_07">
+</div>
+<div class="f_circleG" id="frotateG_08">
+</div>
+</div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div id="video_container">
+        
+      </div>
+             <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+
           <source src="assets/video_h264_sw.mov.mp4" type="video/mp4">
           <source src="assets/video_h264_sw.mov.webm" type="video/webm">
           <source src="assets/video_h264_sw.mov.ogv" type="video/ogg">
           Your browser does not support html5 video.
         </video>
-
-  <div class="container">
+           <script src="js/main.js"></script>
+    </div>
 
     <div class="row">
       <div class="span4">
@@ -64,7 +92,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+   
 
 </body>
 </html>

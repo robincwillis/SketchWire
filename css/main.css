@@ -1,7 +1,9 @@
 @import '../fonts/stylesheet.css';
+@import 'loader.css';
 
 body{
 	padding-top:60px;
+	padding-bottom:20px;
 	color:#fff;
 	font-family: Georgia, Times, "Times New Roman", serif;
 	background-color: rgb(75,75,75);
@@ -32,6 +34,18 @@ h1, h2, h3{
 	background-color:rgba(0,0,0,0.2);
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+}
+
+#preloader{
+	position: absolute;
+	width:128px;
+	height:128px;
+	top:50%;
+	left:50%;
+	margin-top:-64px;
+	margin-left: -64px;
+
+	z-index: 100;
 }
 
 #video_background { 
