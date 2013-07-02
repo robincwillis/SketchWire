@@ -1,0 +1,47 @@
+@import '../fonts/stylesheet.css';
+
+body{
+	padding-top:60px;
+	color:#fff;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	background-color: rgb(75,75,75);
+}
+
+a{
+	color:#F08080;
+}
+
+a:hover{
+	color:#FF0000;
+	text-decoration: none;
+}
+
+a:visited{
+	color:#DC143C;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h1, h2, h3{
+	font-family:'OstrichSansRoundedMedium', Arial, sans-serif;
+}
+
+#panel{
+	background-color:rgba(0,0,0,0.2);
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#video_background { 
+	position: absolute; 
+	bottom: 0px; 
+	right: 0px; 
+	min-width: 100%; 
+	min-height: 100%; 
+	width: 100%; 
+	height: auto; 
+	z-index: -1000; 
+	overflow: hidden; 
+}

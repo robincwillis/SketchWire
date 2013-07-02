@@ -1,16 +1,70 @@
 <!doctype html>
-<html>
-<head>
-	<title>></title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head> 
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sketch Wire : Sketch in 3D</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
 </head>
 <body>
 
-<video width="721" height="540" controls>
-  <source src="assets/SketchWire.m4v" type="video/mp4">
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+       <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+          <source src="assets/video_h264_sw.mov.mp4" type="video/mp4">
+          <source src="assets/video_h264_sw.mov.webm" type="video/webm">
+          <source src="assets/video_h264_sw.mov.ogv" type="video/ogg">
+          Your browser does not support html5 video.
+        </video>
 
-Your browser does not support the video tag.
-</video>
+  <div class="container">
+
+    <div class="row">
+      <div class="span4">
+        <h1>SketchWire</h1>
+        <h2>Sketch In 3D</h2>
+   
+      </div>
+      <div id="panel" class="span4 offset4">
+         <div style="padding: 20px;">
+
+
+        <h3>Code</h3>
+        <ul class="unstyled">
+          <li><a href="https://github.com/robincwillis/SketchWire">View Source On Github</a></li>
+          <li><a href="https://github.com/robincwillis/SketchWire/archive/master.zip">Download ZIP File</a></li>
+          <li><a href="https://github.com/robincwillis/SketchWire/tarball/master">Download TAR Ball</a></li>
+        </ul>
+      	<h3>Find Me On</h3>
+        <ul class="unstyled">
+         <li><a href="http://twitter.com/robincwillis" target="_blank">Twitter</a></li>
+         <li><a href="https://plus.google.com/101160065704574151853/" target="_blank">Google +</a></li>
+         <li><a href="http://www.facebook.com/robincwillis" target="_blank">Facebook</a></li>
+         <li><a href="http://www.linkedin.com/in/robincwillis" target="_blank">Linked In</a></li>
+        </ul>
+        <p>by <a href="http://robincwillis.com">Robin Willis</a></p>
+          </div>
+      </div>
+   </div>
+  </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
-
